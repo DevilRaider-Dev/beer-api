@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import backIcon from '../img/Back.jpg'
 
-class RandomBeer extends Component {
+class DetailsBeer extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -11,7 +11,7 @@ class RandomBeer extends Component {
         }
     }
     componentDidMount() {
-        fetch('https://ih-beers-api2.herokuapp.com/beers/random')
+        fetch(`https://ih-beers-api2.herokuapp.com/beers/${this.props.match.params.id}`)
             .then(response => response.json())
             .then(json => this.setState({ beer: json, isLoading: false }))
     }
@@ -29,7 +29,7 @@ class RandomBeer extends Component {
                                 <div><p>Attenuation level:</p><p>{this.state.beer.attenuation_level}</p></div>
                             </div>
                             <p>{this.state.beer.description}</p>
-                            <Link to="/"><img src={backIcon} alt="Back" /></Link>
+                            <Link to="/all-beers"><img src={backIcon} alt="Back" /></Link>
                         </figcaption>
                     </figure>
                 }
@@ -41,5 +41,4 @@ class RandomBeer extends Component {
     }
 }
 
-export default RandomBeer;
-
+export default DetailsBeer;

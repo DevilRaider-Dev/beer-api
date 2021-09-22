@@ -9,16 +9,16 @@ import './App.css';
 import Home from "./pages/Home";
 import RandomBeer from "./pages/RandomBeer";
 import AllBeers from "./pages/AllBeers";
-import DetailBeer from "./pages/DetailBeer"
+import DetailsBeer from "./pages/DetailsBeer"
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" exact><Home /></Route>
-        <Route path="/all-beers" exact ><AllBeers /></Route>
-        <Route path="/all-beers/details" exact><DetailBeer /></Route>
-        <Route path="/random-beers" exact><RandomBeer /></Route>
+        <Route path="/" exact component={Home}/>
+        <Route path="/all-beers" exact component={AllBeers}/>
+        <Route path="/all-beers/:id" exact component={DetailsBeer}/>
+        <Route path="/random-beers" exact component={RandomBeer}/>
       </Switch>
     </Router>
   );
