@@ -14,7 +14,7 @@ class Home extends Component {
             <div>
                 <div className="container-home-all">
                     <figure>
-                        <Link to="/all_beers">
+                        <Link to="/all-beers">
                             <img src={imgBgAll} alt="All Beers" />
                         </Link>
                         <figcaption>
@@ -25,7 +25,7 @@ class Home extends Component {
                 </div>
                 <div className="container-home-rnd">
                     <figure>
-                        <Link to="/random_beers">
+                        <Link to="/random-beers">
                             <img src={imgBgRnd} alt="Random Beers" />
                         </Link>
                         <figcaption>

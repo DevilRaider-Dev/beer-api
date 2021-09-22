@@ -8,7 +8,7 @@ class Item extends Component {
     render() { 
         return ( 
             <div>
-                Beer
+                
             </div>
          );
     }

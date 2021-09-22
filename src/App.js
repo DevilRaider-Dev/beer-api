@@ -15,10 +15,10 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={Home} exact />
-        <Route path="/all-beers" component={AllBeers} exact />
-        <Route path="/all-beers/details" component={DetailBeer} exact></Route>
-        <Route path="/random-beers" component={RandomBeer} exact></Route>
+        <Route path="/" exact><Home /></Route>
+        <Route path="/all-beers" exact ><AllBeers /></Route>
+        <Route path="/all-beers/details" exact><DetailBeer /></Route>
+        <Route path="/random-beers" exact><RandomBeer /></Route>
       </Switch>
     </Router>
   );
