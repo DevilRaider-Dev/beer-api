@@ -17,7 +17,7 @@ class RandomBeer extends Component {
     }
     render() {
         return (
-            <div className="container-rnd">Random</div>
+            <div className="container-rnd"><h1>Random</h1></div>
 
         );
     }

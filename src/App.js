@@ -6,9 +6,9 @@ import {
 } from "react-router-dom";
 
 import './App.css';
-import AllBeers from "./pages/AllBeers";
 import Home from "./pages/Home";
 import RandomBeer from "./pages/RandomBeer";
+import AllBeers from "./pages/AllBeers";
 import DetailBeer from "./pages/DetailBeer"
 
 function App() {
