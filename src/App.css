@@ -39,7 +39,7 @@
 .container-item figure>img {
   display: block;
   margin: 0 auto;
-  height: 50vh;
+  height: 40vh;
 }
 
 .container-item figcaption h1 {
@@ -103,9 +103,14 @@
   border-radius: 30px;
 }
 
+.footer {
+  margin-bottom: 20vh;
+}
+
 .footer>a div {
-  bottom: 0;
-  background: url('./img/Footer.jpg') center fixed;
+  background: url('./img/Footer.jpg') center/cover;
   height: 10vh;
   width: 100vw;
+  bottom: 0;
+  position: fixed;
 }
