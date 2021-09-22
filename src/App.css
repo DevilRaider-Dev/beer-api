@@ -104,7 +104,8 @@
 }
 
 .footer>a div {
-  background: url('./img/Footer.jpg') center;
+  bottom: 0;
+  background: url('./img/Footer.jpg') center fixed;
   height: 10vh;
   width: 100vw;
 }
